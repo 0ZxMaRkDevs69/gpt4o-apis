@@ -14,7 +14,7 @@ const tin = txt => fonts.bold(txt);
 app.get('/api/gpt4o', async (req, res, next) => {
     try {
         const q = encodeURIComponent(req.query.q);
-        const apiUrl = `https://api.ruii.site/api/gpt4o?q=${q}`;
+        const apiUrl = `https://facebookai-x5l1.onrender.com/facebook_ai?message=${q}`;
 
         const response = await axios.get(apiUrl);
 
